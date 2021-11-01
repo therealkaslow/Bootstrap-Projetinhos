@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de teste</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+  </head>
+  <body>
+    <header>
+      <ul id="menu">
+        <li>
+          <a href="index.html" class='navHover'> Home </a>
+        </li>
+        <li>
+          <a href="contato.html" class='navHover'> Contato </a>
+        </li>
+        <li>
+          <a href="contato.html" class='navHover'> Contato </a>
+        </li>
+        <li>
+          <a href="contato.html" class='navHover'> Contato </a>
+        </li>
+      </ul>
+    </header>
+
+    <h1>Entre em contato <span class="typing"></span></h1>
+
+    <section class='contato'>
+      <div>
+        <form>
+          <label for="nome">Nome:</label> 
+          <div id="txtNome"></div>
+          <input type="text" id="nome" onkeyup='validaNome()' />
+          
+          <label for="email">E-mail:</label> 
+          <input type="text" id="email" onkeyup="validaEmail()" />
+          <div id="txtEmail"></div>
+          
+          <label for="assunto">Assunto:</label> 
+          <textarea name="assunto" id="assunto" rows="3" onkeyup="validaAssunto()"></textarea>
+          <div id="txtAssunto"></div>
+          
+          
+          <button id='envio' onclick="enviar()">Enviar</button>
+        </form>
+      </div>
+
+      <div class='mapa'>
+        <p>Av. Paulista, 100</p>
+        <p>São Paulo - SP</p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
+          width="400"
+          height="250"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          id="mapa"
+          onmouseout='mapaNormal()'
+          onmousemove="mapaZoom()"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="assets/img/facebook.png" alt="Logo do Facebook" />
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="assets/img/linkedin.png" alt="Logo do Linkedin" />
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="assets/img/instagram.png" alt="Logo do Intagram" />
+        </a>
+      </div>
+
+      <p>Todos os direitos reservados: Thiago Faccipieri &copy</p>
+    </footer>
+
+
+    <!-- <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> -->
+
+
+<script src='./assets/js/script.js'></script>
+  </body>
+</html>
